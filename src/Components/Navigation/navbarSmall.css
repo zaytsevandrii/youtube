@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,400&display=swap');
+
+.navbarSmallBox{
+  display: flex;
+  width: 72px;
+}
+
+.navbarSmallBox_fixed {
+  background-color: white;
+  width: 72px;
+  display: flex;
+  position: fixed;
+  top: 56px;  
+  flex-direction: column;
+  height: 100vh;
+  padding-top: 10px;
+  bottom: 0;
+}
+
+.searchboxSmall {
+  height: 74px;
+  width: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.searchboxSmall:hover{
+    background-color: rgb(235, 235, 235);
+}
+.searchboxSmall.active{
+  background-color: rgba(194, 194, 194, 0.459);
+}
+.searchboxSmall.active:hover{
+  background-color: rgba(194, 194, 194, 0.658);
+}
+
+.searchboxSmall__text{
+  color: #030303;
+  font-size: 10px;
+  font-family:'Roboto',Arial,sans-serif;
+}
+.searchboxSmall.active .searchboxSmall__text{
+  font-weight: 650;
+  color: #030303;
+  font-size: 11px;
+  font-family:'Roboto',Arial,sans-serif;
+}
+
+.searchboxSmall__img{
+   
+    stroke: black;
+stroke-width: 0;
+}
+
+.searchbox_link{
+  text-decoration: none;
+  color: #030303;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 9px;
+}
+
+.searchbox_link:hover {
+  text-decoration: none;
+  color: #030303;
+  font-size: 14px;
+  font-family:'Roboto',Arial,sans-serif;
+}
+
+
+@media (max-width: 790px) {
+  .navbarSmallBox{
+    display: none;
+
+  }
+}
+
+
+@media (min-width: 1311px) {
+  .navbarSmallBox {
+    display: none;
+  }
+}

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,400&display=swap');
+
+.navbarBox{
+  display: flex;
+  width: 240px;
+}
+
+
+.navbarBox__fixed {
+  display: flex;
+  width: 240px;
+  position: fixed;
+  top: 56px;
+  bottom: 0;
+  flex-direction: column;
+  padding-top: 10px;
+  z-index: 1;
+}
+
+.navbarBox__fixed hr{
+  height: 1px;
+  width: 220px;
+  margin-left: 0;
+  border: none;
+  background-color: rgba(211, 211, 211, 0.863);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.navbarBox__fixed:hover{
+  overflow: hidden auto;
+}
+
+.navbarLink {
+  padding-left: 22px;
+  display: flex;
+  height: 40px;
+  min-height: 40px;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 10px;
+
+}
+
+
+.navbarLink:hover{
+  background-color: rgba(235, 235, 235, 0.822);
+}
+
+.navbarLink.active{
+  background-color: rgba(194, 194, 194, 0.459);
+}
+.navbarLink.active:hover{
+  background-color: rgba(194, 194, 194, 0.658);
+}
+
+.navbarLink__icon{
+transform: scale(1.1);
+}
+
+.navbarLink__text{
+  margin-left: 22px;
+  color: #030303;
+  font-size: 14px;
+  font-family:'Roboto',Arial,sans-serif;
+  font-weight: 300;
+}
+.navbarLink.active .navbarLink__text{
+  font-weight: 650;
+  color: #030303;
+  font-size: 14px;
+  font-family:'Roboto',Arial,sans-serif;
+}
+
+.navbar_link {
+  text-decoration: none;
+  color: #030303;
+}
+.navbar_link:hover {
+  text-decoration: none;
+  color: #030303;
+  font-size: 14px;
+  font-family:'Roboto',Arial,sans-serif;
+}
+
+
+@media (max-width: 1310px) {
+  .navbarBox {
+    display: none;
+  }
+}

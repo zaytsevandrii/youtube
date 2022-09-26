@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,400&display=swap");
+
+.searchWindow {
+    display: flex;
+    background-color: rgba(245, 245, 245, 0.596);
+    margin: 0;
+    flex: 1;
+    justify-content: center;
+}
+
+.searchWindow_Container {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    margin: 24px;
+    /*  background-color: rgba(255, 0, 0, 0.199); */
+}
+
+.searchWindow_row {
+    /* background-color: green; */
+    max-width: 1280px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.search__row {
+    display: flex;
+    flex-direction: column;
+    /*  background-color: orange; */
+    max-width: 1096px;
+    height: 100%;
+    width: 100%;
+}
+
+.searchWindow__filter {
+    display: flex;
+    margin-top: -10px;
+    margin-bottom: 5px;
+    color: #606060;
+    font-size: xx-small !important;
+    letter-spacing: 0.1rem;
+}
+
+.searchWindow__filter h2 {
+    margin-left: 10px;
+    font-size: 16px;
+
+}
+
+.search__row>hr{
+    width: 100%;
+    border: 1px solid rgba(211, 211, 211, 0.863);
+    font-size: small;
+    margin-top: -3px;
+    margin-bottom: 23px;
+}
+
+

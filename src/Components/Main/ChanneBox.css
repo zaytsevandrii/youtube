@@ -1,0 +1,36 @@
+.channel_videoBox{
+    display: flex;
+    justify-content: center;
+        flex: auto;
+        width: calc(25% - 20px);
+        min-width: 280px;
+        /* background-color: aqua; */
+        height: 335px;
+        box-sizing:border-box;
+        margin-bottom: 20px;
+        text-align: center;
+
+}
+
+.channel__image{
+    margin-left: 25px;
+    display: flex;
+    width: 80%;
+    border-radius: 50%;
+    object-fit: contain;
+    object-position: top;
+}
+
+.channel__description{
+    /* background-color: red; */
+    margin-top: 15px;
+}
+
+.channel__description_image{
+    width: 40px;
+}
+
+
+
+
+
