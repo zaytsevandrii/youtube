@@ -43,6 +43,7 @@
 
 .header_menu {
   color: rgba(0, 0, 0, 0.445);
+  cursor: pointer;
 }
 /* ---------------------------MIDDLE--------------------------------- */
 .header_middle {

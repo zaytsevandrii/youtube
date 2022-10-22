@@ -10,12 +10,12 @@ import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import { BigNavbars } from '../../constants/constans';
 
 
-const Navbar = ({selectedCategory,setSelectedCategory}) => {
+const Navbar = ({selectedCategory,setSelectedCategory,checkMain}) => {
 
 
 
   return (
-    <nav className='navbarBox'>
+    <nav className={checkMain?'navbarBox':'navbarBoxS'}>
       <div className='navbarBox__fixed' >
 
 {/* {BigNavbars.map(category=>(
@@ -26,7 +26,7 @@ const Navbar = ({selectedCategory,setSelectedCategory}) => {
 ))} */}
 
     {BigNavbars.map(category=>(
-      <NavbarLink category={category} selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} key={category.name}/>
+      <NavbarLink category={category} selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} key={category.name} checkMain={checkMain}/>
     ))}
 
 

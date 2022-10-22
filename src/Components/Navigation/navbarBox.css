@@ -5,6 +5,10 @@
   width: 240px;
 }
 
+.navbarBoxS{
+  display: flex;
+  width: 72px;
+}
 
 .navbarBox__fixed {
   display: flex;
@@ -85,7 +89,7 @@ transform: scale(1.1);
 
 
 @media (max-width: 1310px) {
-  .navbarBox {
+  .navbarBox, .navbarBoxS  {
     display: none;
   }
 }

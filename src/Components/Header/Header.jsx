@@ -9,7 +9,7 @@ import { Avatar } from "@mui/material";
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
-const Header = ({setSelectedCategory}) => {
+const Header = ({setSelectedCategory,checkMain,setCheckMain}) => {
   const [searchText,setSearchText]=useState('')
   const navigate = useNavigate()
   const searchSubmit = (e)=>{
@@ -22,11 +22,12 @@ const Header = ({setSelectedCategory}) => {
     }
   }
   
+  console.log(checkMain)
   return (
     <header className="header">
       <div className="header_left">
         <div className="header_menubox">
-        <MenuIcon className="header_menu" />
+        <MenuIcon onClick={()=>setCheckMain(!checkMain)} className="header_menu" />
         </div>
         <Link to="/youtube">
         <img

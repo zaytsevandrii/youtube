@@ -14,7 +14,7 @@ import Header from './Components/Header/Header';
 function AppMain() {
     const [selectedCategory, setSelectedCategory] = useState("New");
     const [videos,setVideos]= useState([])
-
+    const [checkMain,setCheckMain] = useState(true)
 
     useEffect(()=>{
 
@@ -31,7 +31,7 @@ function AppMain() {
 
   return (
     <BrowserRouter>
-    <Header setSelectedCategory={setSelectedCategory}/>
+    <Header setSelectedCategory={setSelectedCategory} checkMain={checkMain} setCheckMain={setCheckMain}/>
   <Routes>
     <Route path='/search/:searchTerm' element={
       <div className='app__page'>
@@ -43,7 +43,7 @@ function AppMain() {
 
 <Route path='/channel/:id' element={
       <div className='app__page'>
-        <Navbar selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory}/>
+        <Navbar selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} checkMain={checkMain}/>
         <NavbarSmall selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory}/>
         <ChannelWindow videos={videos}/>
       </div>
@@ -57,7 +57,7 @@ function AppMain() {
   
   <Route path='/youtube/' element={
     <div className='app__page'>
-       <Navbar selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory}/>
+       <Navbar selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} checkMain={checkMain}/>
       <NavbarSmall selectedCategory={selectedCategory} setSelectedCategory= {setSelectedCategory}/>
       <Main videos={videos}/>
     </div>
