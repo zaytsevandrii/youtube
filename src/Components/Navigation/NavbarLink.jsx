@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 function NavbarLink({category,selectedCategory,setSelectedCategory,checkMain}) {
-  
+  console.log('render link')
   return (
     <>
     {checkMain?
