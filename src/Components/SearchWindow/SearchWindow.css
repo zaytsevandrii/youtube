@@ -13,11 +13,9 @@
     justify-content: center;
     flex: 1;
     margin: 24px;
-    /*  background-color: rgba(255, 0, 0, 0.199); */
 }
 
 .searchWindow_row {
-    /* background-color: green; */
     max-width: 1280px;
     height: 100%;
     width: 100%;
@@ -28,7 +26,6 @@
 .search__row {
     display: flex;
     flex-direction: column;
-    /*  background-color: orange; */
     max-width: 1096px;
     height: 100%;
     width: 100%;

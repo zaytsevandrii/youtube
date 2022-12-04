@@ -29,20 +29,6 @@ const Navbar = ({selectedCategory,setSelectedCategory,checkMain}) => {
       <NavbarLink category={category} selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} key={category.name} checkMain={checkMain}/>
     ))}
 
-
-
-
-    {/*  <NavbarLink  Icon={HomeOutlinedIcon} text='Home' activeLink={activeLink} name='New'/>
-     <NavbarLink Icon={ExploreOutlinedIcon} text='Explore' name='Coding'/>
-     <NavbarLink Icon={HomeIcon} text='Shorts' name='ReactJS'/>
-     <NavbarLink Icon={SubscriptionsOutlinedIcon} text='Subscriptions' name='NextJS'/>
-     <hr />
-
-     <NavbarLink Icon={VideoLibraryOutlinedIcon} text='Library' name='Music'/>
-     <NavbarLink Icon={HomeIcon} text='History' name='Education'/>
-     <NavbarLink Icon={HomeIcon} text='Your videos'/>
-     <NavbarLink Icon={HomeIcon} text='Watch Later'/> */}
-     
      </div>
 
     </nav>

@@ -53,7 +53,6 @@ useEffect(() => {
 
         {videos.map((video,index) => (
           <Fragment key={index}>
-            {/* {console.log(video)} */}
           {video.id.videoId && <VideoBox video={video} />}
           {video.id.channelId &&<ChannelBox channelDetail={video} />}
           </Fragment>

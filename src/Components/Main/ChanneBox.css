@@ -4,7 +4,6 @@
         flex: auto;
         width: calc(25% - 20px);
         min-width: 280px;
-        /* background-color: aqua; */
         height: 335px;
         box-sizing:border-box;
         margin-bottom: 20px;
@@ -22,7 +21,6 @@
 }
 
 .channel__description{
-    /* background-color: red; */
     margin-top: 15px;
 }
 

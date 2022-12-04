@@ -52,8 +52,6 @@ const Header = ({setSelectedCategory,checkMain,setCheckMain}) => {
         </div>
       </form>
 
-
-
       <div className="header_right">
         <div className="header_videocall">
         <VideoCall className="videocall" />
